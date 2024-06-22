@@ -20,7 +20,7 @@ const ChannelDetail = () => {
   },[id])
 
   return (
-    <Box>
+    <Box sx={{overflowX:"hidden",mx:'auto'}}>
       <Box>
         <div style={{
           height:'300px',
@@ -31,7 +31,6 @@ const ChannelDetail = () => {
       </Box>
 
       <Box display='flex' p={2}>
-        <Box sx={{ mr: { sm: '200px' } }}/>
         <Videos videos={videos}/>
       </Box>
 
